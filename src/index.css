@@ -51,9 +51,16 @@ img {
       
   }
 }
-
+ body{
+   background: #f7f4f4;
+ }
 /* Topbar */
 .btn_bg{
   background: #F9FFEC;
 
+}
+
+.bg_oportunites{
+  background-image: url("./images/Color Dots.png");
+  background-size: cover;
 }
