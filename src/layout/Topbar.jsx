@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 const Topbar = () => {
+  const [active, setActive] = React.useState(1)
   return (
     <div className=" h-20 w-full border-b">
       <div className=" w-full h-full flex items-center justify-center">
@@ -12,22 +13,22 @@ const Topbar = () => {
                 <img src={logo} alt="" />
               </div>
               <div className="flex items-center justify-center gap-5">
-                <Link to="/" className=" text-font font-bold text-sm">
+                <Link onClick={()=>setActive(1)} to="/" className={ active === 1 ? " text-font font-bold text-sm":  " text-font font-medium text-sm"}>
                   Home
                 </Link>
-                <Link to="/works" className=" text-font font-medium text-sm">
+                <Link to="/works"  onClick={()=>setActive(2)}  className={ active === 2 ? " text-font font-bold text-sm":  " text-font font-medium text-sm"}>
                   How it Works
                 </Link>
-                <Link to="/process" className=" text-font font-medium text-sm">
+                <Link to="/process" onClick={()=>setActive(3)}  className={ active === 3 ? " text-font font-bold text-sm":  " text-font font-medium text-sm"}>
                   Our Process
                 </Link>
                 <Link
                   to="/resources"
-                  className=" text-font font-medium text-sm"
+                  onClick={()=>setActive(4)}  className={ active === 4 ? " text-font font-bold text-sm":  " text-font font-medium text-sm"}
                 >
                   Resources
                 </Link>
-                <Link to="/contact" className=" text-font font-medium text-sm">
+                <Link to="/contact" onClick={()=>setActive(5)}  className={ active === 5 ? " text-font font-bold text-sm":  " text-font font-medium text-sm"}>
                   Contact Us
                 </Link>
               </div>

@@ -64,3 +64,11 @@ img {
   background-image: url("./images/Color Dots.png");
   background-size: cover;
 }
+.bgFooter{
+  background-image: url("./images/vest.png");
+  background-size: contain;
+  margin-top: 30px;
+  width: 20%;
+  height: 88%;
+  
+}
