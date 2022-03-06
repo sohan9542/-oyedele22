@@ -6,6 +6,8 @@ import Home from "./Pages/Home";
 import Footer from "./layout/Footer";
 import Opportunities from "./components/home/Opportunities";
 import Works from "./Pages/Works";
+import Resources from "./Pages/Resources";
+import OurProcess from "./Pages/OurProcess";
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
         <Routes>
         <Route index element={<Home />} />
         <Route path="works" element={<Works />} />
+        <Route path="resources" element={<Resources />} />
+        <Route path="process" element={<OurProcess />} />
         </Routes>
         <Opportunities/>
         <Footer/>

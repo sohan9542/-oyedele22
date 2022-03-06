@@ -22,12 +22,21 @@ const Playground = () => {
           <div className="w-full mt-8">
             <img src={play} alt="" />
           </div>
-          <div className="w-full flex items-center justify-between my-8">
+          <div className="w-full  items-center justify-between hidden lg:flex my-8">
             <p className=" w-96 text-sm text-font_sm">
               Moreover, Africa is our fatherland right? So we should have piece
               ofownership of the actual land.
             </p>
             <button className="bg-pr px-4 py-2 rounded-md flex items-center gap-2 text-white text-sm hover:bg-green-800">
+              HERE'S HOW IT WORKS <BsFillArrowRightCircleFill />
+            </button>
+          </div>
+          <div className="w-full  items-center flex-col justify-center gap-2 flex lg:hidden my-8">
+            <p className=" text-sm text-font_sm">
+              Moreover, Africa is our fatherland right? So we should have piece
+              ofownership of the actual land.
+            </p>
+            <button className="bg-pr w-full flex items-center justify-center  py-4 rounded-md  gap-2 text-white text-sm hover:bg-green-800">
               HERE'S HOW IT WORKS <BsFillArrowRightCircleFill />
             </button>
           </div>

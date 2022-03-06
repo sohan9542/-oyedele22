@@ -8,7 +8,7 @@ import inv5 from "../../images/Inv5.png";
 import line from "../../images/line.png";
 const Invest = () => {
   return (
-    <div className=" w-full mt-32">
+    <div className=" w-full my-32">
       <div className="flex items-center justify-center">
         <div className="container">
           <div className=" flex items-center w-full justify-center">
@@ -24,10 +24,10 @@ const Invest = () => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center mt-8">
             {/* fist row */}
-            <div>
+            <div className=" block">
               <img src={inv1} alt="" />
             </div>
-            <div className="flex items-start flex-col">
+            <div className=" flex items-start flex-col">
               <div className="flex items-center gap-1 text-sr text-sm font-medium">
                 <div className="w-12 h-1">
                   <img src={line} alt="" />
@@ -45,6 +45,7 @@ const Invest = () => {
                 loans from banks.
               </p>
             </div>
+       
             {/* second row */}
             <div className="flex items-start lg:pl-32 justify-center flex-col">
               <div className="flex items-center gap-1 text-sr text-sm font-medium">

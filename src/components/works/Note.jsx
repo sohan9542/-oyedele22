@@ -8,7 +8,7 @@ const Note = () => {
   return (
     <div className="w-full flex mt-8 mb-32 items-center justify-center">
       <div className="container">
-        <h1 className=" text-4xl font-bold w-96">
+        <h1 className=" text-4xl text-font font-bold w-96">
           Important things to note about VestAfrik
         </h1>
 
@@ -36,7 +36,7 @@ const Note = () => {
             )}
           </div>
           {active.collaps === 1 && active.iscollaps === true && (
-            <p className=" pl-5 pt-1 font-thin text-gray-400 text-sm w-2/3">
+            <p className=" pl-5 pt-1 font-thin text-gray-400 text-sm w-full lg:w-2/3">
               Any Nigerian citizen either currently residing in Nigeria or
               indiaspora over the age of 18 with valid id. Pefas makrofuvis.
               Åbel predatende. Lörem ipsum benök plasöligt innan soren om
@@ -69,7 +69,7 @@ const Note = () => {
             )}
           </div>
           {active.collaps === 2 && active.iscollaps === true && (
-            <p className=" pl-5 pt-1 font-thin text-gray-400 text-sm w-2/3">
+            <p className=" pl-5 pt-1 font-thin text-gray-400 text-sm w-full lg:w-2/3">
               Any Nigerian citizen either currently residing in Nigeria or
               indiaspora over the age of 18 with valid id. Pefas makrofuvis.
               Åbel predatende. Lörem ipsum benök plasöligt innan soren om
@@ -102,7 +102,7 @@ const Note = () => {
             )}
           </div>
           {active.collaps === 3 && active.iscollaps === true && (
-            <p className=" pl-5 pt-1 font-thin text-gray-400 text-sm w-2/3">
+            <p className=" pl-5 pt-1 font-thin text-gray-400 text-sm w-full lg:w-2/3">
               Any Nigerian citizen either currently residing in Nigeria or
               indiaspora over the age of 18 with valid id. Pefas makrofuvis.
               Åbel predatende. Lörem ipsum benök plasöligt innan soren om
@@ -135,7 +135,7 @@ const Note = () => {
             )}
           </div>
           {active.collaps === 4 && active.iscollaps === true && (
-            <p className=" pl-5 pt-1 font-thin text-gray-400 text-sm w-2/3">
+            <p className=" pl-5 pt-1 font-thin text-gray-400 text-sm w-full lg:w-2/3">
               Any Nigerian citizen either currently residing in Nigeria or
               indiaspora over the age of 18 with valid id. Pefas makrofuvis.
               Åbel predatende. Lörem ipsum benök plasöligt innan soren om

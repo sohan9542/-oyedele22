@@ -34,41 +34,55 @@ img {
 
 @media (min-width: 1280px) {
   .container {
-      max-width: 1140px !important;
+    max-width: 1140px !important;
 
   }
 }
 
 @media (max-width: 768px) {
   .container {
-      max-width: 720px !important;
+    max-width: 720px !important;
+
+  }
+
+  .bg_getStarted {
+    background: #F9FFEC;
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 370px !important;
 
   }
 }
-@media (max-width: 400px) {
-  .container {
-      max-width: 390px !important;
-      
-  }
+
+body {
+  background: #f7f4f4;
 }
- body{
-   background: #f7f4f4;
- }
+
 /* Topbar */
-.btn_bg{
+.btn_bg {
   background: #F9FFEC;
 
 }
 
-.bg_oportunites{
+.red_btn {
+  background: #D22925;
+  color: white;
+}
+
+.bg_oportunites {
   background-image: url("./images/Color Dots.png");
   background-size: cover;
 }
-.bgFooter{
+
+.bgFooter {
   background-image: url("./images/vest.png");
   background-size: contain;
   margin-top: 30px;
   width: 20%;
   height: 88%;
-  
+
 }

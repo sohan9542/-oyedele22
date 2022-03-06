@@ -9,7 +9,7 @@ const Invest = () => {
     <div className=" w-full mt-16">
       <div className="flex items-center justify-center">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-32 gap-y-0 items-center my-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-32 gap-y-4 items-center my-8">
             {/* fist row */}
             <div>
               <img src={inv1} alt="" />

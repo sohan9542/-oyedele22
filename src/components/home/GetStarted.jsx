@@ -5,7 +5,7 @@ import lounch from "../../images/launch.png";
 
 const GetStarted = () => {
   return (
-    <div className=" w-full">
+    <div className=" w-full bg_getStarted">
       <div className="flex items-center justify-center">
         <div className="container">
           <h1 className=" font-bold text-font text-3xl w-full text-center">
@@ -17,7 +17,7 @@ const GetStarted = () => {
               graphic elements of a document or visual.
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-8">
+          <div className=" hidden lg:grid grid-cols-3 gap-5 mt-8 ">
             <div className="flex items-center justify-center flex-col gap-1">
               <div className=" h-28">
                 <img src={create} alt="" />
@@ -39,6 +39,32 @@ const GetStarted = () => {
                 <img src={lounch} alt="" />
               </div>
               <h3 className=" text-font font-bold w-full text-center">
+                Grow your portdolio
+              </h3>
+            </div>
+          </div>
+          <div className=" grid lg:hidden grid-cols-3 gap-5 mt-8">
+            <div className="flex items-center justify-center flex-col gap-1">
+              <div className=" h-20">
+                <img src={create} alt="" />
+              </div>
+              <h3 className=" text-font text-sm font-bold w-full text-center">
+                Tell Us about yourself
+              </h3>
+            </div>
+            <div className="flex items-center justify-center flex-col gap-1">
+              <div className=" h-20">
+                <img src={add} alt="" />
+              </div>
+              <h3 className=" text-font text-sm font-bold w-full text-center">
+                Find an investment opportunity
+              </h3>
+            </div>
+            <div className="flex items-center justify-center flex-col gap-1">
+              <div className=" h-20">
+                <img src={lounch} alt="" />
+              </div>
+              <h3 className=" text-font text-sm font-bold w-full text-center">
                 Grow your portdolio
               </h3>
             </div>
