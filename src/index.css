@@ -86,3 +86,9 @@ body {
   height: 88%;
 
 }
+
+
+.bg-Contact{
+  background: url("./images/rectengle.png");
+  background-size: cover;
+}

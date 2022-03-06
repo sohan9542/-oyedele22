@@ -8,6 +8,7 @@ import Opportunities from "./components/home/Opportunities";
 import Works from "./Pages/Works";
 import Resources from "./Pages/Resources";
 import OurProcess from "./Pages/OurProcess";
+import ContactUs from "./Pages/ContactUs";
 
 const App = () => {
   return (
@@ -15,13 +16,14 @@ const App = () => {
       <BrowserRouter>
         <Topbar />
         <Routes>
-        <Route index element={<Home />} />
-        <Route path="works" element={<Works />} />
-        <Route path="resources" element={<Resources />} />
-        <Route path="process" element={<OurProcess />} />
+          <Route index element={<Home />} />
+          <Route path="works" element={<Works />} />
+          <Route path="resources" element={<Resources />} />
+          <Route path="process" element={<OurProcess />} />
+          <Route path="contact" element={<ContactUs />} />
         </Routes>
-        <Opportunities/>
-        <Footer/>
+        <Opportunities />
+        <Footer />
       </BrowserRouter>
     </div>
   );
