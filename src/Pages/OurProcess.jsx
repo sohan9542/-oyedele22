@@ -11,11 +11,11 @@ const OurProcess = ({ setGetlocation }) => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center w-full bg-white">
+    <div className="flex items-center justify-center w-full  bg-white">
       <div className="container ">
         <div
           style={{ background: "#E8F0F3" }}
-          className="  grid grid-cols-1 lg:grid-cols-3 gap-5"
+          className="  grid grid-cols-1 pt-5 lg:pt-0 lg:grid-cols-3 gap-5"
         >
           <div className=" flex items-center col-span-2 ">
             <h1 className=" h1_text font-bold text-black pl-12">
