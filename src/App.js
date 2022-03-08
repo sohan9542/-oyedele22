@@ -14,7 +14,7 @@ const App = () => {
 const [getlocation, setGetlocation] = React.useState("/")
   React.useEffect(() => {
     console.log(getlocation)
-    if(getlocation === "/process"){
+    if(getlocation === ("/process" || "/resources")){
       document.body.style.background ="#fff"
     }
     else{
