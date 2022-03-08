@@ -8,7 +8,7 @@ const Note = () => {
   return (
     <div className="w-full flex mt-8 mb-32 items-center justify-center">
       <div className="container">
-        <h1 className=" text-4xl text-font font-bold w-96">
+        <h1 className=" build_text text-black font-bold w-96">
           Important things to note about VestAfrik
         </h1>
 

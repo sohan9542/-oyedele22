@@ -3,7 +3,13 @@ import ship from "../images/ship.png";
 import dot from "../images/dot.png";
 import photo from "../images/Photo.png";
 import bg from "../images/BG.png";
-const OurProcess = () => {
+import { useLocation } from "react-router-dom";
+const OurProcess = ({ setGetlocation }) => {
+  const location = useLocation();
+  React.useEffect(() => {
+    setGetlocation(location.pathname);
+  }, []);
+
   return (
     <div className="flex items-center justify-center w-full bg-white">
       <div className="container ">
@@ -12,7 +18,7 @@ const OurProcess = () => {
           className="  grid grid-cols-1 lg:grid-cols-3 gap-5"
         >
           <div className=" flex items-center col-span-2 ">
-            <h1 className=" text-3xl lg:text-5xl font-bold text-font pl-12">
+            <h1 className=" h1_text font-bold text-black pl-12">
               We believe transparency will be the most-disruptive innovation in
               our business
             </h1>
@@ -24,35 +30,33 @@ const OurProcess = () => {
         </div>
         <div className=" my-16">
           <div className=" w-full flex items-center flex-col justify-center">
-            <h1 className=" text-3xl font-bold text-font">
-              This is how we work
-            </h1>
-            <p className=" w-2/3 text-center text-sm text-font_sm pt-2">
+            <h1 className=" build_text  text-font">This is how we work</h1>
+            <p className=" w-2/3 text-center p_text text-font_sm pt-2">
               Lorem ipsum is common placeholder text used to demonstrate the
               graphic elements of a document or visual presentation.{" "}
             </p>
           </div>
           <div className=" w-full mt-12 grid bg-white grid-cols-1 lg:grid-cols-3 gap-12 bg_grid relative">
             <div className=" relative z-50 flex flex-col gap-1 items-center justify-center">
-              <h6 className="text-font font-bold relative z-50">
+              <h6 className="text-font font-bold n_text relative z-50">
                 Account Creation
               </h6>
-              <p className="text-xs text-font_sm pt-1 w-full text-center">
+              <p className="text-sm text-font_sm pt-1 w-full text-center">
                 The buyer is required to create an account with VestAfrik to be
                 eligible to buy properties on the marketplace. This process
                 includes registration with basic user information such as
                 Fullname, Email, Password, Date of Birth, Profile Picture, and
                 Address.
               </p>
-              <div style={{ top: "-25px" }} className=" absolute z-40 left-40">
+              <div style={{ top: "-15px" }} className=" absolute z-40 left-40">
                 <h1 className="text-6xl font-bold text-yellow-300">1</h1>
               </div>
             </div>
             <div className=" relative z-50 flex flex-col gap-1 items-center justify-center">
-              <h6 className="text-font font-bold relative z-50">
+              <h6 className="text-font font-bold relative n_text z-50">
                 Account Verification
               </h6>
-              <p className="text-xs text-font_sm pt-1 w-full text-center">
+              <p className="text-sm text-font_sm pt-1 w-full text-center">
                 To ensure validity, users will be required to submit documents
                 for KYC verification purposes. This may include government ID,
                 proof of residency/address, and many more. During this process,
@@ -66,10 +70,10 @@ const OurProcess = () => {
               </div>
             </div>
             <div className=" relative z-50 flex flex-col gap-1 items-center justify-center">
-              <h6 className="text-font font-bold relative z-50">
+              <h6 className="text-font font-bold n_text relative z-50">
                 Making An Offer
               </h6>
-              <p className="text-xs text-font_sm pt-1 w-full text-center">
+              <p className="text-sm text-font_sm pt-1 w-full text-center">
                 When the buyer finds a property of interest, the buyer is able
                 to make an offer on the property. The buyer will state the
                 maximum offer price. The buyer then waits for the offer to be
@@ -80,8 +84,10 @@ const OurProcess = () => {
               </div>
             </div>
             <div className=" relative z-50 flex flex-col gap-1 items-center justify-center">
-              <h6 className="text-font font-bold relative z-50">Agreement</h6>
-              <p className="text-xs text-font_sm pt-1 w-full text-center">
+              <h6 className="text-font font-bold relative n_text z-50">
+                Agreement
+              </h6>
+              <p className="text-sm text-font_sm pt-1 w-full text-center">
                 If the buyer’s offer is accepted, the buyer enters into a
                 contract of agreement that binds the buyer to purchasing the
                 property. Part of this would require the buyer to pay an agreed
@@ -95,10 +101,10 @@ const OurProcess = () => {
               </div>
             </div>
             <div className=" relative z-50 flex flex-col gap-1 items-center justify-center">
-              <h6 className="text-font font-bold relative z-50">
+              <h6 className="text-font n_text font-bold relative z-50">
                 Payment & Issuance of Document
               </h6>
-              <p className="text-xs text-font_sm pt-1 w-full text-center">
+              <p className="text-sm text-font_sm pt-1 w-full text-center">
                 Once the buyer reviews and agrees to the document, the buyer
                 funds his/her VestAfrik wallet and makes the required payments
                 at the required times. Once the payments have been made, all
@@ -112,8 +118,10 @@ const OurProcess = () => {
               </div>
             </div>
             <div className=" relative z-50 flex flex-col gap-1 items-center justify-center">
-              <h6 className="text-font font-bold relative z-50">Close</h6>
-              <p className="text-xs text-font_sm pt-1 w-full text-center">
+              <h6 className="text-font font-bold n_text relative z-50">
+                Close
+              </h6>
+              <p className="text-sm text-font_sm pt-1 w-full text-center">
                 At the closing of the property, the buyer can either opt to keep
                 the property in his/her VestAfrik portfolio for the purpose of
                 flipping or resale in the future or have the property completely
@@ -136,11 +144,14 @@ const OurProcess = () => {
             style={{ background: "#FFCE00" }}
           >
             <div className=" col-span-2 pl-10 flex items-start flex-col justify-center">
-              <h1 className="text-font font-bold text-2xl lg:text-4xl w-3/4">
+              <h1 className="text-font font-bold build_text w-3/4">
                 There is no better time to start investing in real estate and no
                 better place to invest
               </h1>
-              <button className="px-4 py-2 font-medium text-sm bg-white mt-3" style={{ color: "#FFCE00" }}>
+              <button
+                className="button_padding2 font-medium text-sm bg-white mt-3"
+                style={{ color: "#FFCE00" }}
+              >
                 Get Started
               </button>
             </div>

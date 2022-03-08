@@ -34,10 +34,72 @@ img {
 
 @media (min-width: 1280px) {
   .container {
-    max-width: 1140px !important;
+    max-width: 1180px !important;
 
   }
 }
+
+/* text sizes */
+.font-bold {
+  font-weight: 800!important;
+}
+
+.started_p_text {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.h1_text {
+  font-size: 56px;
+  line-height: 55px;
+}
+
+.y_text {
+  font-size: 16px;
+  line-height: 32px;
+  padding: 4px 20px;
+
+}
+
+.n_text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.p_text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button_padding {
+  padding: 10px 50px;
+}
+.button_padding2{
+  padding: 12px 32px;
+}
+.o_text {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 34px;
+}
+
+.build_text {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+.i_text{
+  font-weight: 900;
+font-size: 24px;
+line-height: 32px;
+}
+.margin_top {
+  margin-top: -230px;
+}
+
+
 
 @media (max-width: 768px) {
   .container {
@@ -51,16 +113,68 @@ img {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container {
-    max-width: 370px !important;
+    max-width: 480px !important;
 
+  }
+
+  .h1_text {
+    font-size: 28px;
+    line-height: 24px;
+  }
+
+  .build_text {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .y_text {
+    font-size: 8px;
+    line-height: 32px;
+  }
+
+  .margin_top {
+    margin-top: 0px;
+  }
+
+  .o_text {
+    font-size: 24px;
+    line-height: 34px;
   }
 }
 
-body {
-  background: #f7f4f4;
+@media (max-width: 400px) {
+  .o_text {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .container {
+    max-width: 380px !important;
+
+  }
+
+  .h1_text {
+    font-size: 28px;
+    line-height: 24px;
+  }
+
+  .build_text {
+    line-height: 24px;
+    line-height: 24px;
+  }
+
+  .y_text {
+    font-size: 8px;
+    line-height: 32px;
+  }
+
+  .margin_top {
+    margin-top: 0px;
+  }
 }
+
 
 /* Topbar */
 .btn_bg {
@@ -88,7 +202,7 @@ body {
 }
 
 
-.bg-Contact{
+.bg-Contact {
   background: url("./images/rectengle.png");
   background-size: cover;
 }

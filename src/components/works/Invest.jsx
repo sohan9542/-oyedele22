@@ -16,15 +16,15 @@ const Invest = () => {
             </div>
             <div className="flex items-start flex-col">
               <div
-                className="flex items-center gap-1  text-sm font-medium"
+                className="flex items-center gap-1 n_text font-medium"
                 style={{ color: "#B42D2A" }}
               >
                 OUR ASSETS
               </div>
-              <h4 className="text-lg font-bold text-font pt-2">
+              <h4 className="i_text font-bold text-font pt-2">
                 Invest a build a portfolio of only quality assets.
               </h4>
-              <p className=" font-bold text-font_sm text-sm  w-96 text-start pt-2">
+              <p className=" p_text text-font_sm  w-96 text-start pt-2">
                 Our assets are all high income yielding. We conduct our due
                 diligence to ensure the validity of all our assets. All legal
                 documents binding the property are checked for authenticity by
@@ -37,15 +37,15 @@ const Invest = () => {
             {/* second row */}
             <div className="flex items-start lg:pl-32 justify-center flex-col">
               <div
-                className="flex items-center gap-1  text-sm font-medium"
+                className="flex items-center gap-1  n_text "
                 style={{ color: "#B42D2A" }}
               >
                 OUR MODEL
               </div>
-              <h4 className="text-lg font-bold text-font pt-2">
+              <h4 className="i_text  text-font pt-2">
                 Earn more spending less with more options and less fees.
               </h4>
-              <p className=" font-bold text-font_sm text-sm  w-96 text-start pt-2">
+              <p className="  text-font_sm p_text  w-96 text-start pt-2">
                 VestAfrik is designed for every investors of all income levels,
                 experiences, and backgrounds. We have leveraged technology to
                 create an access With VestAfrik, we create an access to a
@@ -64,15 +64,15 @@ const Invest = () => {
             </div>
             <div className="flex items-start flex-col">
               <div
-                className="flex items-center gap-1  text-sm font-medium"
+                className="flex items-center gap-1  n_text"
                 style={{ color: "#B42D2A" }}
               >
                 OUR PLATFORM
               </div>
-              <h4 className="text-lg font-bold text-font pt-2">
+              <h4 className="i_text text-font pt-2">
                 Start investing with a single click.
               </h4>
-              <p className=" font-bold text-font_sm text-sm  w-96 text-start pt-2">
+              <p className="  text-font_sm p_text  w-96 text-start pt-2">
                 Once you create an account and get approved, you have access to
                 a plethora of investment opportunities. Simple filter investment
                 opportunity based on your desire and preferences such as

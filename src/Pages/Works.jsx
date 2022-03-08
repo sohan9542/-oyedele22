@@ -2,13 +2,19 @@ import React from "react";
 import Invest from "../components/works/Invest";
 import Hero from "../components/works/Hero";
 import Note from "../components/works/Note";
+import { useLocation } from "react-router-dom";
 
-const Works = () => {
+const Works = ({ setGetlocation }) => {
+  const location = useLocation();
+  React.useEffect(() => {
+    setGetlocation(location.pathname);
+  }, []);
+
   return (
     <>
       <Hero />
       <Invest />
-      <Note/>
+      <Note />
     </>
   );
 };

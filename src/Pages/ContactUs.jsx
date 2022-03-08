@@ -1,6 +1,10 @@
 import React from "react";
-
-const ContactUs = () => {
+import { useLocation } from "react-router-dom";
+const ContactUs = ({ setGetlocation }) => {
+  const location = useLocation();
+  React.useEffect(() => {
+    setGetlocation(location.pathname);
+  }, []);
   return (
     <>
       <div className=" w-full bg-Contact h-96 ">
@@ -18,7 +22,10 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-      <div style={{ marginTop:"-180px"}} className=" w-full flex items-center justify-center mb-32">
+      <div
+        style={{ marginTop: "-180px" }}
+        className=" w-full flex items-center justify-center mb-32"
+      >
         <div className=" w-full mx-3 lg:mx-0 lg:w-2/3 bg-white shadow-md p-8 lg:p-16">
           <h1 className=" font-bold text-2xl lg:text-4xl text-font w-full text-center">
             Send us a Message
@@ -51,7 +58,9 @@ const ContactUs = () => {
               ></textarea>
             </div>
             <div className=" lg:col-span-2 flex items-center justify-center mt-4">
-              <button className=" px-5 py-2 red_btn hover:bg-red-700 rounded-sm text-sm">Send Message</button>
+              <button className=" px-5 py-2 red_btn hover:bg-red-700 rounded-sm text-sm">
+                Send Message
+              </button>
             </div>
           </form>
         </div>

@@ -2,12 +2,12 @@ import React from "react";
 import footerbg from "../images/footerBg.png";
 import { FiInstagram } from "react-icons/fi";
 import { AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
-
+import vest from "../images/vest.png";
 const Footer = () => {
   return (
     <>
-      <div className="bg-tr w-full px-3 py-16">
-        <div className="flex items-center justify-center w-full h-full ">
+      <div className="bg-tr w-full px-3 relative pt-16 pb-8">
+        <div className="flex items-center py-3 justify-center w-full h-full ">
           <div className="container">
             <div className="w-full grid grid-cols-1 items-center lg:grid-cols-2 gap-5">
               <div className="flex items-start flex-col pt-6">
@@ -22,7 +22,7 @@ const Footer = () => {
                     alt=""
                   />
                 </div>
-                <p className=" text-white text-xs  w-96 font-thin">
+                <p className=" text-white n_text w-96 font-thin">
                   VestAfrik Realty Solutions, LLC ("VestAfrik") operates a
                   website at vestafrik.com and certain mobile apps (the
                   "Platform"'). By using the Platform, you accept our Terms of
@@ -45,35 +45,35 @@ const Footer = () => {
               </div>
               <div className=" hidden lg:grid grid-cols-3 gap-5 pt-6">
                 <div className="flex items-start gap-1 flex-col">
-                  <h4 className="text-white font-bold pb-3">Product</h4>
-                  <a href="#" className=" text-gray-300 text-xs">
+                  <h4 className="text-white n_text font-bold pb-3">Product</h4>
+                  <a href="#" className=" text-gray-300 n_text">
                     How it works
                   </a>
-                  <a href="#" className=" text-gray-300 text-xs">
+                  <a href="#" className=" text-gray-300 n_text">
                     Our Process
                   </a>
-                  <a href="#" className=" text-gray-300 text-xs">
+                  <a href="#" className=" text-gray-300 n_text">
                     Real Estate
                   </a>
                 </div>
                 <div className="flex items-start gap-1 flex-col">
                   <h4 className="text-white font-bold pb-3">Company</h4>
-                  <a href="#" className=" text-gray-300 text-xs">
+                  <a href="#" className=" text-gray-300 n_text">
                     About Us
                   </a>
-                  <a href="#" className=" text-gray-300 text-xs">
+                  <a href="#" className=" text-gray-300 n_text">
                     Our Process
                   </a>
-                  <a href="#" className=" text-gray-300 text-xs">
+                  <a href="#" className=" text-gray-300 n_text">
                     Careers
                   </a>
                 </div>
                 <div className="flex items-start gap-1 flex-col">
                   <h4 className="text-white font-bold pb-3">Resources</h4>
-                  <a href="#" className=" text-gray-300 text-xs">
+                  <a href="#" className=" text-gray-300 n_text">
                     Help Center
                   </a>
-                  <a href="#" className=" text-gray-300 text-xs">
+                  <a href="#" className=" text-gray-300 n_text">
                     Articles
                   </a>
                 </div>
@@ -118,6 +118,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
+       <div className=" absolute w-96 pt-5 h-80 bottom-0 lg:top-0 left-0 z-50">
+       <img src={vest} alt="" />
+       </div>
       </div>
       <div
         className=" w-full h-12 hidden lg:flex items-center justify-center"
