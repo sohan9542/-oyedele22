@@ -19,7 +19,7 @@ const Hero = () => {
               <span className="text-gray-400 font-thin">has been made </span>
               Easier
             </h1>
-            <p className=" text-font_sm p_text ">
+            <p className=" text-font_sm p_text pt-2 lg:pt-0">
               Lorem ipsum is common placeholder text used to demonstrate the
               graphic elements of a document or visual presentation. Lorem ipsum
               is common placeholder text used to demonstrate the graphic
